@@ -20,7 +20,6 @@ class Centaur:
                 if self.run > 0:
                     print('clip clop clip clop')
                     self.run -= 10
-                    
                 else:
                     print('tired')
     def cranky(self):
