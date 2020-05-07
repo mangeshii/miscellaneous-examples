@@ -22,4 +22,4 @@ while chances < 5:
     
 
 if not chances > 5:
-        print('You loose the number was' , number)
+        print('You loose the number was' , number)    
