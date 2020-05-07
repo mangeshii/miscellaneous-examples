@@ -17,7 +17,7 @@ def binarySearch(elements,search):
                 first = mid +1
     return -1
 
-
+  
 result=binarySearch([1, 3, 4, 5, 7, 8, 9],7)
 
 if result != -1:

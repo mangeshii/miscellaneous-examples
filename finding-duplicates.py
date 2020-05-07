@@ -15,3 +15,4 @@ for x in lst:
 
            
 print(dups)
+  
