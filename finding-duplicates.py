@@ -11,7 +11,7 @@ for x in lst:
     else:
         if unique[x] == 1:
             dups.append(x)
-        unique[x] += 1            
+        unique[x]+=1         
 
            
 print(dups)
