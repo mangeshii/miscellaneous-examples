@@ -7,7 +7,7 @@ class Centaur:
 
     def shooting(self):
         if self.sleeping:
-            if self.standing:
+            if self.standing:  
                 if self.shoot < 3:
                     print('twag twag')
                     self.shoot +=1

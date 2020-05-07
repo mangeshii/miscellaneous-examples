@@ -18,7 +18,8 @@ while chances < 5:
         print('Your guess is too high')
 
 
-    chances += 1
+    chances += 1 
+    
 
 if not chances > 5:
         print('You loose the number was' , number)

@@ -7,4 +7,4 @@ for i in range(second):
     
     time.sleep(1)
 
-print('TIME UP!!')
+print('TIME UP!!')  
