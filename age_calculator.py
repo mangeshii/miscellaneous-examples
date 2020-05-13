@@ -38,7 +38,7 @@ elif birthdate <= present_date and birthmonth >= present_month:
 elif birthdate <= present_date and birthmonth <= present_month:
 
     dd=present_date-birthdate
-    mm=present_month=birthmonth
+    mm=present_month-birthmonth
     yy=present_year-birthyear
     print('you are {} years, {} months, {} days old'.format(yy,mm,dd))
 
