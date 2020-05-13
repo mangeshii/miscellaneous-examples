@@ -1,4 +1,4 @@
-test_board=[" "]*9
+test_board = [" "]*9
 
 
 def display_board(board):
@@ -7,21 +7,21 @@ def display_board(board):
     print(board[6] + '|' + board[7] + '|' + board[8])
 
 
-players_turn='x'
+players_turn = 'o'
 
 
 def players_position():
-  
+
     global players_turn
     global test_board
 
     display_board(test_board)
     turns = 0
-    
-    while turns < 9:
-        position=int(input(players_turn + ' enter you position:'))
 
-        if test_board[position]==" ":
+    while turns < 9:
+        position = int(input(players_turn + ' enter you position:'))
+
+        if test_board[position] == " ":
             test_board[position] = players_turn
             display_board(test_board)
             turns += 1
@@ -31,61 +31,21 @@ def players_position():
 
             continue
 
-        if players_turn == 'x':
-            players_turn ='o'
-        else:
+        if players_turn == 'o':
             players_turn = 'x'
-        
+        else:
+            players_turn = 'o'
+
 
 players_position()
 
 
 
-def win_check(board):
-    global players_turn
-    while True:
-        if board[6]== board[7] and board[7]== board[8] and board[8] ==board[6] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-            
-        elif board[0] == board[1] and board[1] == board[2] and board[2] == board[1] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
+def win_check():
+    if test_board[0] =='x' and test_board[1] == 'x' and test_board[2]=='x':
+        print('x wins')
+    elif test_board[0] == 'o' and test_board[1] == 'o' and test_board[2] == 'o':
+        print('o wins')
+   
 
-        elif board[3] == board[4] and board[4] == board[5] and board[5] == board[6] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-
-        elif board[0] == board[3] and board[3] == board[6] and board[6] == board[0] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-
-        elif board[1] == board[4] and board[4] == board[7] and board[7] == board[1] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-
-        elif board[2] == board[5] and board[5] == board[8] and board[8] == board[2] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-
-        elif board[0] == board[4] and board[4] == board[8] and board[8] == board[0] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-
-        elif board[2] == board[4] and board[4] == board[6] and board[6] == board[2] != ' ':
-            print('\n Game over')
-            print('\n {} wins'.format(players_turn))
-            break
-
-        
-win_check(test_board)
-
-
-        
+win_check()
