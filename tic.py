@@ -43,9 +43,43 @@ players_position()
 
 def win_check():
     if test_board[0] =='x' and test_board[1] == 'x' and test_board[2]=='x':
-        print('x wins')
+        print('x wins')    
     elif test_board[0] == 'o' and test_board[1] == 'o' and test_board[2] == 'o':
         print('o wins')
    
+    elif test_board[3] == 'x' and test_board[4] == 'x' and test_board[5] == 'x':
+        print('x wins')
+    elif test_board[3] == 'o' and test_board[4] == 'o' and test_board[5] == 'o':
+        print('o wins')
 
+    elif test_board[6] == 'x' and test_board[7] == 'x' and test_board[8] == 'x':
+        print('x wins')
+    elif test_board[6] == 'o' and test_board[7] == 'o' and test_board[8] == 'o':
+        print('o wins')
+
+    elif test_board[0] == 'x' and test_board[3] == 'x' and test_board[6] == 'x':
+        print('x wins')
+    elif test_board[0] == 'o' and test_board[3] == 'o' and test_board[6] == 'o':
+        print('o wins')
+
+    elif test_board[1] == 'x' and test_board[4] == 'x' and test_board[7] == 'x':
+        print('x wins')
+    elif test_board[1] == 'o' and test_board[4] == 'o' and test_board[7] == 'o':
+        print('o wins')
+
+    elif test_board[2] == 'x' and test_board[5] == 'x' and test_board[8] == 'x':
+        print('x wins')
+    elif test_board[2] == 'o' and test_board[5] == 'o' and test_board[8] == 'o':
+        print('o wins')
+
+
+    elif test_board[0] == 'x' and test_board[4] == 'x' and test_board[8] == 'x':
+        print('x wins')
+    elif test_board[0] == 'o' and test_board[4] == 'o' and test_board[8] == 'o':
+        print('o wins')
+
+    elif test_board[2] == 'x' and test_board[4] == 'x' and test_board[6] == 'x':
+        print('x wins')
+    elif test_board[2] == 'o' and test_board[4] == 'o' and test_board[6] == 'o':
+        print('o wins')
 win_check()
