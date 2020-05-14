@@ -7,7 +7,7 @@ def display_board(board):
     print(board[6] + '|' + board[7] + '|' + board[8])
 
 
-players_turn = 'o'
+players_turn = 'x'
 
 
 def players_position():
@@ -31,10 +31,10 @@ def players_position():
 
             continue
 
-        if players_turn == 'o':
-            players_turn = 'x'
-        else:
+        if players_turn == 'x':
             players_turn = 'o'
+        else:
+            players_turn = 'x'
 
 
 players_position()

@@ -1,3 +1,4 @@
+a
 from PIL import Image
 colorImage = Image.open("./eifel.jpeg")
 
